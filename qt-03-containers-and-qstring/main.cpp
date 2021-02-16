@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
     while(javaIterator.hasNext()) {
        QString currentName = javaIterator.next();
-       if (longestName.size() < currentName)
+       if (longestName.size() < currentName.size())
        {
           longestName = currentName;
        }
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 
     for(QList<QString>::const_iterator cIt = names.cbegin(); cIt != names.cend(); ++cIt) {
        QString currentName = *cIt;
-       if (shortestName.size() > currentName)
+       if (shortestName.size() > currentName.size())
        {
           shortestName = currentName;
        }
