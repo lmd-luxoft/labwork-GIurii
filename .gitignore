@@ -1,0 +1,4 @@
+build*
+temp
+*.pro.use*
+data*
